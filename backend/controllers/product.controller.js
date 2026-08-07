@@ -266,7 +266,7 @@ export async function editItem(req, res, next) {
       productStatus = "Out of Stock";
 
       mailOptions = {
-        from: 'SwiftStocKE@noreply.com',
+        from: '"SwiftStocKE" <michael.mbugua@strathmore.edu>',
         to: retailer.email,
         subject: `Inventory Alert: Product ${existingProduct.itemName} is now Out of Stock.`,
         text: `Hello Retailer,
@@ -287,7 +287,7 @@ export async function editItem(req, res, next) {
       productStatus = "Low Stock";
 
       mailOptions = {
-        from: 'SwiftStocKE@noreply.com',
+        from: '"SwiftStocKE" <michael.mbugua@strathmore.edu>',
         to: retailer.email,
         subject: `Inventory Alert: Product ${existingProduct.itemName} is Low on Stock.`,
         text: `Hello Retailer,
@@ -536,7 +536,7 @@ export async function restockItem(req, res, next) {
       productStatus = "Out of Stock";
 
       mailOptions = {
-        from: 'SwiftStocKE@noreply.com',
+        from: '"SwiftStocKE" <michael.mbugua@strathmore.edu>',
         to: retailer.email,
         subject: `Inventory Alert: Product ${existingProduct.itemName} is now Out of Stock.`,
         text: `Hello Retailer,
@@ -557,7 +557,7 @@ export async function restockItem(req, res, next) {
       productStatus = "Low Stock";
 
       mailOptions = {
-        from: 'SwiftStocKE@noreply.com',
+        from: '"SwiftStocKE" <michael.mbugua@strathmore.edu>',
         to: retailer.email,
         subject: `Inventory Alert: Product ${existingProduct.itemName} is Low on Stock.`,
         text: `Hello Retailer,

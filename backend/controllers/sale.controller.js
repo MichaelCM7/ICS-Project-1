@@ -78,7 +78,7 @@ export async function recordNewSale(req, res, next) {
         product.status = 'Out of Stock';
 
         mailOptions = {
-          from: 'SwiftStocKE@noreply.com',
+          from: '"SwiftStocKE" <michael.mbugua@strathmore.edu>',
           to: retailer.email,
           subject: `Inventory Alert: Product ${product.itemName} is now Out of Stock.`,
           text: `Hello Retailer,
@@ -99,7 +99,7 @@ export async function recordNewSale(req, res, next) {
         product.status = 'Low Stock';
 
         mailOptions = {
-          from: 'SwiftStocKE@noreply.com',
+          from: '"SwiftStocKE" <michael.mbugua@strathmore.edu>',
           to: retailer.email,
           subject: `Inventory Alert: Product ${product.itemName} is Low on Stock.`,
           text: `Hello Retailer,

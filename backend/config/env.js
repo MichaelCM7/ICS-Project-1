@@ -16,6 +16,8 @@ export const OTP_EXPIRES_IN = process.env.OTP_EXPIRES_IN;
 
 export const EMAIL_TOKEN_SECRET = process.env.EMAIL_TOKEN_SECRET;
 
+export const BREVO_API_KEY = process.env.BREVO_API_KEY;
+
 // export const {
 //   PORT,
 //   MONGO_URI,
