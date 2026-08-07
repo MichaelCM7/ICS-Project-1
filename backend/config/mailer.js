@@ -1,11 +1,12 @@
 import nodemailer from 'nodemailer';
 import Transport from 'nodemailer-brevo-transport';
+import { BREVO_API_KEY } from '../config/env.js';
 // import dns from 'dns';
 // import {SMTP_USER, SMTP_PASS} from '../config/env.js'
 
 const transporter = nodemailer.createTransport(
   new Transport({
-    apiKey: process.env.BREVO_API_KEY
+    apiKey: BREVO_API_KEY
   })
 );
 
